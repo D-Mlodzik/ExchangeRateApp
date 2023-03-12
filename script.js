@@ -7,7 +7,7 @@ const rateInfo = document.querySelector('.rate-info');
 
 const calculate = () => {
 
-    fetch(`https://api.ratesapi.io/api/latest?base=${currencyOne.value}&symbols=${currencyTwo.value}`)
+    fetch(`https://api.exchangerate.host/latest?base=${currencyOne.value}&symbols=${currencyTwo.value}`)
         .then(res => res.json())
         .then(data => {
 
